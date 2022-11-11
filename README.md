@@ -7,19 +7,13 @@
 # <a name="TableOfContents">Table of contents</a>
 + [Description](#Description)
 + [Tools and technologies](#Technology)
-+ [How to run](#Jenkins)
-    + [Gradle command](#GradleCommand)
-    + [Property files](#PropertyFiles)
-      + [Default property files](#PropertyFilesDefaults)
++ [How to run](#HowToRun)
+    + [Config files](#ConfigFiles)
     + [Run in Jenkins](#RunInJenkins)
 + [Telegram Notifications](#TelegramNotifications)
 + [Test results report in Allure Report](#AllureReport)
 + [Allure TestOps integration](#AllureTestOps)
     + [Project in Allure TestOps](#AllureTestOpsProject)
-    + [Start a run of custom set of tests](#AllureTestOpsStartTests)
-    + [Dashboards](#Dashboards)
-    + [Defects](#Defects)
-+ [GitHub webhooks](#GithubWebhooks)
 + [Jira integration](#Jira)
 + [Video of running tests](#Video)
 
@@ -82,7 +76,6 @@ appWaitActivity=
 systemPort=
 ```
 
-[Back to the table of contents ⬆](#TableOfContents)
 
 ### <a name="CongigFileExample">Config file examples</a>
 
@@ -182,7 +175,7 @@ Telegram bot sends a brief report to a specified telegram chat by results of eac
 [Back to the table of contents ⬆](#TableOfContents)
 
 
-# <a name="JiraIntegration">Jira integration</a>
+# <a name="Jira">Jira integration</a>
 <p align="center">
   <img src="resources/images/jira.png" alt="Jira integration"/>
 </p>
