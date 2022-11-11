@@ -181,7 +181,7 @@ Telegram bot sends a brief report to a specified telegram chat by results of eac
 
 # <a name="Jira">[Jira](https://jira.autotests.cloud/browse/HOMEWORK-424) integration</a>
 <p align="center">
-  <img src="resources/images/jira.png" alt="Jira integration"/>
+  <img src="resources/images/jira1.png" alt="Jira integration"/>
 </p>
 
 [Back to the table of contents ⬆](#TableOfContents)
