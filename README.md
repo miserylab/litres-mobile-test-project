@@ -21,6 +21,8 @@
 # <a name="Description">Description</a>
 The test project consists of mobile(android) tests.
 
+[Back to the table of contents ⬆](#TableOfContents)
+
 # <a name="Technology">Tools and a technologies</a>
 <p  align="center">
   <img src="resources/images/logo/python.svg" width="5%" alt="Python"/>
