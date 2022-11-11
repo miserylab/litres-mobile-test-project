@@ -1,12 +1,17 @@
 __author__ = 'miserylab'
+import os
 import allure
 from appium.webdriver.common.appiumby import AppiumBy
 from selene import have
 from selene.support.shared import browser
-from allure import step
-
 from litres_mobile_tests.model import app
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
+EMAIL = os.getenv('email')
+PASSWORD = os.getenv('password')
 
 
 @allure.tag('mobile')
@@ -36,9 +41,9 @@ def test_save_a_book():
         browser.element((AppiumBy.ID, 'ru.litres.android:id/login_button')).click()
 
     with allure.step('Enter login'):
-        browser.element((AppiumBy.ID, 'ru.litres.android:id/login')).send_keys('miserylab.r6s@gmail.com')
+        browser.element((AppiumBy.ID, 'ru.litres.android:id/login')).send_keys(EMAIL)
     with allure.step('Enter password'):
-        browser.element((AppiumBy.ID, 'ru.litres.android:id/password')).send_keys('akcyig3h')
+        browser.element((AppiumBy.ID, 'ru.litres.android:id/password')).send_keys(PASSWORD)
     with allure.step('Click "Log in" button'):
         browser.element((AppiumBy.ID, 'ru.litres.android:id/sign_in_btn')).click()
 

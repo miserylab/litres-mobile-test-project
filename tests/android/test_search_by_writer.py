@@ -4,7 +4,6 @@ import allure
 from appium.webdriver.common.appiumby import AppiumBy
 from selene import have
 from selene.support.shared import browser
-from allure import step
 
 from litres_mobile_tests.model import app
 
