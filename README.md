@@ -195,19 +195,28 @@ Also additional test artifacts are available:
 ## <a name="AllureTestOpsProject">Project in Allure TestOps</a>
 
 <p align="center">
-  <img src="images/screens/AllureTestOpsTests.gif" alt="AllureTestOpsTests" width="1050">
+  <img src="resources/images/testopsgif1.gif" alt="Allure Report"/>
 </p>
 
 <p align="center">
-  <img src="images/screens/AllureTestOpsDashboardsOverview.png" alt="AllureTestOpsDashboardsOverview" width="1050">
+  <img src="resources/images/dashboard_testops.png" alt="Allure Report"/>
 </p>
+
+<p align="center">
+  <img src="resources/images/features_alluretestops.png" alt="Allure Report"/>
+</p>
+
+<p align="center">
+  <img src="resources/images/launches_testops.png" alt="Allure Report"/>
+</p>
+
 
 [Back to the table of contents ⬆](#TableOfContents)
 
 
 # <a name="JiraIntegration">Jira integration</a>
 <p align="center">
-![image](https://user-images.githubusercontent.com/95403808/201317409-8c298de1-415b-4cf3-a8ce-cd2b27f252bd.png)  
+  <img src="resources/images/jira.png" alt="Jira integration"/>
 </p>
 
 [Back to the table of contents ⬆](#TableOfContents)
