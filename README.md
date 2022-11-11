@@ -193,70 +193,13 @@ Also additional test artifacts are available:
 > The link can be accessed only by authorized users.
 
 ## <a name="AllureTestOpsProject">Project in Allure TestOps</a>
-Test-cases in the project are imported and constantly updated from the code,
-so there is no need in complex process of synchronization manual test-cases and autotests.\
-It is enough to create and update an autotest in the code and the test-case in TMS always will be in actual state.\
-Manual test-cases also can be added in TMS in case of need(via web interface or via code).
+
 <p align="center">
   <img src="images/screens/AllureTestOpsTests.gif" alt="AllureTestOpsTests" width="1050">
 </p>
 
-```mermaid
-stateDiagram-v2
-state "Test created/updated in the code" as A
-state "Build in Jenkins is triggered on push or started manually" as B
-state "Jenkins build is done" as C
-state "Allure TestOps launch related to the build marked as closed" as D
-state "All executed test-cases are automatically created/updated according to the code" as E
-[*] --> A
-A --> B
-B --> C
-C --> D
-D --> E
-E --> A
-```
-
-## <a name="AllureTestOpsStartTests">Ability to start a run of custom set of tests from Allure TestOps</a>
-Any person not related to autotest creation can select a set of tests, environment parameter(RunIn) and start a run.\
-Allure TestOps run will be created, Jenkins job triggered with correct parameters. And results of the job will be seamlessly integrated into Allure TestOps.
-<p align="center">
-  <img src="images/screens/AllureTestOpsSelectionOfTests.gif" alt="AllureTestOpsSelectionOfTests" width="1050">
-</p>
-
-As soon as the Jenkins job is done, corresponding tests get their statuses. A tester can finish manual tests(if any) and click "Close launch".
-
-<p align="center">
-  <img src="images/screens/AllureTestOpsFinishedRunClickStop.png" alt="AllureTestOpsFinishedRunClickStop" width="1250">
-</p>
-
-> After that all these test-cases(names, steps, tags etc.) will be updated according to the recent code changes.
-
-[Back to the table of contents ⬆](#TableOfContents)
-
-## <a name="Dashboards">Dashboards</a>
-Automation trends charts, distribution tests by some different parameters etc.:
 <p align="center">
   <img src="images/screens/AllureTestOpsDashboardsOverview.png" alt="AllureTestOpsDashboardsOverview" width="1050">
-</p>
-
-<p align="center">
-  <img src="images/screens/AllureTestOpsDashboardsAutomation.png" alt="AllureTestOpsDashboardsAutomation" width="1050">
-</p>
-
-<p align="center">
-  <img src="images/screens/AllureTestOpsDashboardsMembers.png" alt="AllureTestOpsDashboardsMembers" width="1050">
-</p>
-
-<p align="center">
-  <img src="images/screens/AllureTestOpsDashboardsAdditional.png" alt="AllureTestOpsDashboardsAdditional" width="1050">
-</p>
-
-[Back to the table of contents ⬆](#TableOfContents)
-
-## <a name="Defects">Defects</a>
-Knows defects are automatically recognized by defined patterns for test fails in further launches.
-<p align="center">
-  <img src="images/screens/AllureTestOpsDefects.png" alt="AllureTestOpsDefects" width="1050">
 </p>
 
 [Back to the table of contents ⬆](#TableOfContents)
