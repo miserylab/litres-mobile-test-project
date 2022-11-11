@@ -121,25 +121,16 @@ systemPort=
 
 [Back to the table of contents ⬆](#TableOfContents)
 
-## <a name="RunInJenkins">Run in [Jenkins](https://jenkins.autotests.cloud/job/C12-vyach_son-bookmate_test/)</a>
+## <a name="RunInJenkins">Run in [Jenkins](https://jenkins.autotests.cloud/job/C01-miserylab-python_litres-mobile-test-project/)</a>
 Main page of the build:
 <p  align="center">
 <img src="images/screens/JenkinsBuildMainPage.png" alt="JenkinsBuildMainPage" width="950">
 </p>
 
-A parametrized Jenkins job can be launched with needed ***tag*** and ***runIn***:
-<p  align="center">
-<img src="images/screens/JenkinsBuildParameters.gif" alt="JenkinsBuildParameters" width="950">
-</p>
-
-`project-{runIn}.properties` config files are created in the build workspace on start build.
-
-Sensitive information(login names and passwords) is stored in an encrypted form in Jenkins credential storage.\
-And relatively safe transferred to the build by gradle arguments(see [Gradle command](#GradleCommand) section, 'Additional parameters') and it's values masked in the logs.
 
 After the build is done the test results are available in:
 >- <code><strong>*Allure Report*</strong></code>
->- <code><strong>*Allure TestOps*</strong></code> - results are uploaded there and the automated test-cases can be automatically updated accordingly to the recent changes in the code.
+>- <code><strong>*Allure TestOps*</strong></code>
 
 <p  align="center">
 <img src="images/screens/JenkinsFinishedBuild.png" alt="JenkinsFinishedBuild" width="950">
@@ -156,36 +147,13 @@ Telegram bot sends a brief report to a specified telegram chat by results of eac
 
 [Back to the table of contents ⬆](#TableOfContents)
 
-# <a name="AllureReport">Test results report in [Allure Report](https://jenkins.autotests.cloud/job/C12-vyach_son-bookmate_test/47/allure/)</a>
+# <a name="AllureReport">Test results report in [Allure Report](https://jenkins.autotests.cloud/job/C01-miserylab-python_litres-mobile-test-project/12/allure/)</a>
 
-## Main page
-Main page of Allure report contains the following blocks:
-
->- <code><strong>*ALLURE REPORT*</strong></code> - displays date and time of the test, overall number of launched tests, а также диаграмму с указанием процента и количества успешных, упавших и сломавшихся в процессе выполнения тестов
->- <code><strong>*TREND*</strong></code> - displays trend of running tests for all runs
->- <code><strong>*SUITES*</strong></code> - displays distribution of tests by suites
->- <code><strong>*CATEGORIES*</strong></code> - displays distribution of unsuccessful tests by defect types
-<p align="center">
-  <img src="images/screens//AllureReportMain.png" alt="AllureReportMain" width="950">
-</p>
-
-## List of tests with steps and test artefacts
-On the page the list of the tests grouped by suites with status shown for each test.\
-Full info about each test can be shown: tags, severity, duration, detailed steps.
 
 <p align="center">
   <img src="images/screens/AllureReportSuites.png" alt="AllureReportSuites" width="1150">
 </p>
 
-Also additional test artifacts are available:
->- Screenshot
->- Page Source
->- Video
->- Browserstack full info link
-
-<p align="left">
-  <img src="images/screens/AllureReportSuites2.png" alt="AllureReportSuites2" width="950">
-</p>
 
 [Back to the table of contents ⬆](#TableOfContents)
 
