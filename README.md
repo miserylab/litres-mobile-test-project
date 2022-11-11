@@ -117,7 +117,7 @@ systemPort=
 ## <a name="RunInJenkins">Run in [Jenkins](https://jenkins.autotests.cloud/job/C01-miserylab-python_litres-mobile-test-project/)</a>
 Main page of the build:
 <p  align="center">
-<img src="images/screens/JenkinsBuildMainPage.png" alt="JenkinsBuildMainPage" width="950">
+  <img src="resources/images/jenkins1.png" alt="JenkinsBuild"/>
 </p>
 
 
@@ -126,7 +126,7 @@ After the build is done the test results are available in:
 >- <code><strong>*Allure TestOps*</strong></code>
 
 <p  align="center">
-<img src="images/screens/JenkinsFinishedBuild.png" alt="JenkinsFinishedBuild" width="950">
+  <img src="resources/images/jenkins2.png" alt="JenkinsFinishedBuild"/>
 </p>
 
 [Back to the table of contents ⬆](#TableOfContents)
@@ -135,7 +135,7 @@ After the build is done the test results are available in:
 # <a name="TelegramNotifications">Telegram Notifications</a>
 Telegram bot sends a brief report to a specified telegram chat by results of each build.
 <p  align="center">
-<img src="images/screens/TelegramNotification.png" alt="TelegramNotification" width="550">
+<img src="resources/images/telegram.png" alt="TelegramNotification" >
 </p>
 
 [Back to the table of contents ⬆](#TableOfContents)
@@ -144,7 +144,11 @@ Telegram bot sends a brief report to a specified telegram chat by results of eac
 
 
 <p align="center">
-  <img src="images/screens/AllureReportSuites.png" alt="AllureReportSuites" width="1150">
+  <img src="resources/images/allure_report1.png" alt="AllureReport1">
+</p>
+
+<p align="center">
+  <img src="resources/images/allure_report2.png" alt="AllureReport2">
 </p>
 
 
