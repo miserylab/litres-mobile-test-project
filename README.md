@@ -7,19 +7,13 @@
 # <a name="TableOfContents">Table of contents</a>
 + [Description](#Description)
 + [Tools and technologies](#Technology)
-+ [How to run](#Jenkins)
-    + [Gradle command](#GradleCommand)
-    + [Property files](#PropertyFiles)
-      + [Default property files](#PropertyFilesDefaults)
++ [How to run](#HowToRun)
+    + [Config files](#ConfigFiles)
     + [Run in Jenkins](#RunInJenkins)
 + [Telegram Notifications](#TelegramNotifications)
 + [Test results report in Allure Report](#AllureReport)
 + [Allure TestOps integration](#AllureTestOps)
     + [Project in Allure TestOps](#AllureTestOpsProject)
-    + [Start a run of custom set of tests](#AllureTestOpsStartTests)
-    + [Dashboards](#Dashboards)
-    + [Defects](#Defects)
-+ [GitHub webhooks](#GithubWebhooks)
 + [Jira integration](#Jira)
 + [Video of running tests](#Video)
 
@@ -82,7 +76,6 @@ appWaitActivity=
 systemPort=
 ```
 
-[Back to the table of contents ⬆](#TableOfContents)
 
 ### <a name="CongigFileExample">Config file examples</a>
 
@@ -121,25 +114,16 @@ systemPort=
 
 [Back to the table of contents ⬆](#TableOfContents)
 
-## <a name="RunInJenkins">Run in [Jenkins](https://jenkins.autotests.cloud/job/C12-vyach_son-bookmate_test/)</a>
+## <a name="RunInJenkins">Run in [Jenkins](https://jenkins.autotests.cloud/job/C01-miserylab-python_litres-mobile-test-project/)</a>
 Main page of the build:
 <p  align="center">
 <img src="images/screens/JenkinsBuildMainPage.png" alt="JenkinsBuildMainPage" width="950">
 </p>
 
-A parametrized Jenkins job can be launched with needed ***tag*** and ***runIn***:
-<p  align="center">
-<img src="images/screens/JenkinsBuildParameters.gif" alt="JenkinsBuildParameters" width="950">
-</p>
-
-`project-{runIn}.properties` config files are created in the build workspace on start build.
-
-Sensitive information(login names and passwords) is stored in an encrypted form in Jenkins credential storage.\
-And relatively safe transferred to the build by gradle arguments(see [Gradle command](#GradleCommand) section, 'Additional parameters') and it's values masked in the logs.
 
 After the build is done the test results are available in:
 >- <code><strong>*Allure Report*</strong></code>
->- <code><strong>*Allure TestOps*</strong></code> - results are uploaded there and the automated test-cases can be automatically updated accordingly to the recent changes in the code.
+>- <code><strong>*Allure TestOps*</strong></code>
 
 <p  align="center">
 <img src="images/screens/JenkinsFinishedBuild.png" alt="JenkinsFinishedBuild" width="950">
@@ -156,36 +140,13 @@ Telegram bot sends a brief report to a specified telegram chat by results of eac
 
 [Back to the table of contents ⬆](#TableOfContents)
 
-# <a name="AllureReport">Test results report in [Allure Report](https://jenkins.autotests.cloud/job/C12-vyach_son-bookmate_test/47/allure/)</a>
+# <a name="AllureReport">Test results report in [Allure Report](https://jenkins.autotests.cloud/job/C01-miserylab-python_litres-mobile-test-project/12/allure/)</a>
 
-## Main page
-Main page of Allure report contains the following blocks:
-
->- <code><strong>*ALLURE REPORT*</strong></code> - displays date and time of the test, overall number of launched tests, а также диаграмму с указанием процента и количества успешных, упавших и сломавшихся в процессе выполнения тестов
->- <code><strong>*TREND*</strong></code> - displays trend of running tests for all runs
->- <code><strong>*SUITES*</strong></code> - displays distribution of tests by suites
->- <code><strong>*CATEGORIES*</strong></code> - displays distribution of unsuccessful tests by defect types
-<p align="center">
-  <img src="images/screens//AllureReportMain.png" alt="AllureReportMain" width="950">
-</p>
-
-## List of tests with steps and test artefacts
-On the page the list of the tests grouped by suites with status shown for each test.\
-Full info about each test can be shown: tags, severity, duration, detailed steps.
 
 <p align="center">
   <img src="images/screens/AllureReportSuites.png" alt="AllureReportSuites" width="1150">
 </p>
 
-Also additional test artifacts are available:
->- Screenshot
->- Page Source
->- Video
->- Browserstack full info link
-
-<p align="left">
-  <img src="images/screens/AllureReportSuites2.png" alt="AllureReportSuites2" width="950">
-</p>
 
 [Back to the table of contents ⬆](#TableOfContents)
 
@@ -195,19 +156,28 @@ Also additional test artifacts are available:
 ## <a name="AllureTestOpsProject">Project in Allure TestOps</a>
 
 <p align="center">
-  <img src="images/screens/AllureTestOpsTests.gif" alt="AllureTestOpsTests" width="1050">
+  <img src="resources/images/testopsgif1.gif" alt="Allure Report"/>
 </p>
 
 <p align="center">
-  <img src="images/screens/AllureTestOpsDashboardsOverview.png" alt="AllureTestOpsDashboardsOverview" width="1050">
+  <img src="resources/images/dashboard_testops.png" alt="Allure Report"/>
 </p>
+
+<p align="center">
+  <img src="resources/images/features_alluretestops.png" alt="Allure Report"/>
+</p>
+
+<p align="center">
+  <img src="resources/images/launches_testops.png" alt="Allure Report"/>
+</p>
+
 
 [Back to the table of contents ⬆](#TableOfContents)
 
 
-# <a name="JiraIntegration">Jira integration</a>
+# <a name="Jira">Jira integration</a>
 <p align="center">
-![image](https://user-images.githubusercontent.com/95403808/201317409-8c298de1-415b-4cf3-a8ce-cd2b27f252bd.png)  
+  <img src="resources/images/jira.png" alt="Jira integration"/>
 </p>
 
 [Back to the table of contents ⬆](#TableOfContents)
