@@ -13,7 +13,6 @@
 + [Telegram Notifications](#TelegramNotifications)
 + [Test results report in Allure Report](#AllureReport)
 + [Allure TestOps integration](#AllureTestOps)
-    + [Project in Allure TestOps](#AllureTestOpsProject)
 + [Jira integration](#Jira)
 + [Video of running tests](#Video)
 
