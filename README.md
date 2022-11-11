@@ -180,6 +180,7 @@ Telegram bot sends a brief report to a specified telegram chat by results of eac
 [Back to the table of contents ⬆](#TableOfContents)
 
 # <a name="Jira">[Jira](https://jira.autotests.cloud/browse/HOMEWORK-424) integration</a>
+> The link can be accessed only by authorized users.
 <p align="center">
   <img src="resources/images/jira.png" alt="Jira integration"/>
 </p>
