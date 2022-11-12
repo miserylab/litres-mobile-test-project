@@ -84,18 +84,17 @@ systemPort=
 * <details>
     <summary><h4>config.browserstack.env.example</h4></summary>
 
-    ```congig
+    ```properties
         platformName='android'
         platformVersion='11.0'
         deviceName='Google Pixel 4'
-        app='app'
+        app='bs://xxxxxxxxxxxxxxa55b8e022f13c5827c'
         remote_url='http://hub.browserstack.com/wd/hub'
         user_name='xxxa_QrzYPv'
         access_key='xxxxuBSKtK1F'
         projectName='First Python project'
         buildName='browserstack-build-1'
         sessionName='BStack first_test'
-
     ```
   
   </details>
