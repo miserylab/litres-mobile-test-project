@@ -161,10 +161,6 @@ Telegram bot sends a brief report to a specified telegram chat by results of eac
 ## <a name="AllureTestOpsProject">Project in Allure TestOps</a>
 
 <p align="center">
-  <img src="resources/images/testopsgif1.gif" alt="Allure Report"/>
-</p>
-
-<p align="center">
   <img src="resources/images/dashboard_testops.png" alt="Allure Report"/>
 </p>
 
