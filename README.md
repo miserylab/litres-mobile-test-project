@@ -1,4 +1,4 @@
-# Test automation project for [Litres](https://www.litres.ru/o-kompanii/) mobile app
+# Test automation project for [Litres](https://litres.com/about-us/) mobile app
 
 ![Litres logo](https://user-images.githubusercontent.com/95403808/201316165-1731965e-bf09-4dae-82d7-1789b6e8eef6.png)
 
