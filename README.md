@@ -49,7 +49,7 @@ The autotests in this project are written in `Python` using `Selene` framework.\
 
 # <a name="HowToRun">How to run</a>
 
-To run locally with config.personal.env (create it first) the following command is used:
+To run locally with config.emulation.env (create it first) the following command is used:
 ```bash
 env -S 'context=emulation' pytest tests/android/test_login.py --alluredir reports/
 ```
